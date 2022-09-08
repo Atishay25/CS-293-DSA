@@ -1,0 +1,19 @@
+0. BST
+1. AVL
+Choose type of tree : Enter per comparison cost (non-negative integer): Enter per parent-child update cost (non-negative integer): >>SUCCESSFULLY ADDED
+>>SUCCESSFULLY ADDED
+>>SUCCESSFULLY ADDED
+>>SUCCESSFULLY ADDED
+>>SUCCESSFULLY ADDED
+>>|__[JC: 10, P: 10, H: 0]
+    |--[JC: 9, P: 9, H: 1]
+    │   |--[JC: 3, P: 3, H: 2]
+NULL tree
+NULL tree
+NULL tree
+    |__[JC: 12, P: 12, H: 1]
+NULL tree
+        |__[JC: 34, P: 34, H: 2]
+NULL tree
+NULL tree
+>>
