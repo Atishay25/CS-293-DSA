@@ -1,0 +1,16 @@
+Name        : Atishay Jain
+Roll Number : 210050026
+CS 293 - Lab 5 
+
+Assumptions :
+1. I have made implemented both the parts of AVL and BST that were essentially required(find, insert)
+2. I have assumed that you will first check my code on these essential requirements.
+3. So, I also implemented Deletion in BST and AVL tree, I'm pretty sure of deletion working in BST tree,
+   but for AVL a little error occurs in Deletion when the number of Node become greater than around 25000.
+4. I assume that as this part was not essentially required and was Bonus, therefore you will not cut marks 
+   of the essential part if my deletion in AVL does not work perfectly.
+   However, it works correctly upto some extent. I'm sure there must be some little error, which I could have
+   fixed if I would have got more time. But as this part was bonus, I guess it won't be a big issue because
+   according to me, my basic parts of code that were required essentially are working correctly.
+5. I also used updateParentChild function for incrementing pointer update cost in the insertion part of both BST and AVl.
+
