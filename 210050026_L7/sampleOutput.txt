@@ -1,0 +1,218 @@
+[34m*********************************************************[0m
+[31mWelcome to the CS293 Travel Planner (Autumn 2022 version)[0m
+[34m*********************************************************[0m
+
+Enter user code (0 to exit): ****************************
+Please choose an admin job:
+  0. Exit admin user
+  1. Enter/delete station name
+  2. Enter/delete journey code
+  3. Read commands from file
+  4. Exit reading commands from file
+  5. Print trie of station names
+  6. Enter journey information
+
+Input:   Input file name: Finished reading and executing commands from file
+****************************
+Please choose an admin job:
+  0. Exit admin user
+  1. Enter/delete station name
+  2. Enter/delete journey code
+  3. Read commands from file
+  4. Exit reading commands from file
+  5. Print trie of station names
+  6. Enter journey information
+
+Input:  ***()
+    |_C_()
+    │   |-A-()
+    │   │   |_N_()
+    │   │       |_T_()
+    │   │           |_O_()
+    │   │               |_N_()
+    │   │                   |_M_()
+    │   │                       |_E_()
+    │   │                           |_N_()
+    │   │                               |_T_(isWord)
+    │   │                                    PUNE CANTONMENT
+    │   |_E_()
+    │   │   |_N_()
+    │   │       |_T_()
+    │   │           |_R_()
+    │   │               |-A-()
+    │   │                   |_L_(isWord)
+    │   │                        NAGPUR CENTRAL
+    │   │                        MUMBAI CENTRAL
+    │   |_H_()
+    │       |_H_()
+    │           |-A-()
+    │               |_T_()
+    │                   |_R_()
+    │                       |-A-()
+    │                           |_P_()
+    │                               |-A-()
+    │                                   |_T_()
+    │                                       |_I_(isWord)
+    │                                            CHHATRAPATI SHIVAJI MAHARAJ TERMINUS MUMBAI
+    |_H_()
+    │   |_O_()
+    │       |_W_()
+    │           |_R_()
+    │               |-A-()
+    │                   |_H_(isWord)
+    │                        HOWRAH JUNCTION
+    |_J_()
+    │   |_U_()
+    │       |_N_()
+    │           |_C_()
+    │               |_T_()
+    │                   |_I_()
+    │                       |_O_()
+    │                           |_N_(isWord)
+    │                                ROURKELA JUNCTION
+    │                                HOWRAH JUNCTION
+    │                                KALYAN JUNCTION
+    │                                THANE JUNCTION
+    |_K_()
+    │   |-A-()
+    │       |_L_()
+    │           |_Y_()
+    │               |-A-()
+    │                   |_N_(isWord)
+    │                        KALYAN JUNCTION
+    |_L_()
+    │   |_O_()
+    │       |_K_()
+    │           |_M_()
+    │               |-A-()
+    │                   |_N_()
+    │                       |_Y_()
+    │                           |-A-(isWord)
+    │                                LOKMANYA TILAK TERMINUS MUMBAI
+    |_M_()
+    │   |-A-()
+    │   │   |_H_()
+    │   │       |-A-()
+    │   │           |_R_()
+    │   │               |-A-()
+    │   │                   |_J_(isWord)
+    │   │                        CHHATRAPATI SHIVAJI MAHARAJ TERMINUS MUMBAI
+    │   |_U_()
+    │       |_M_()
+    │           |_B_()
+    │               |-A-()
+    │                   |_I_(isWord)
+    │                        LOKMANYA TILAK TERMINUS MUMBAI
+    │                        CHHATRAPATI SHIVAJI MAHARAJ TERMINUS MUMBAI
+    │                        MUMBAI CENTRAL
+    |_N_()
+    │   |-A-()
+    │       |_G_()
+    │           |_P_()
+    │               |_U_()
+    │                   |_R_(isWord)
+    │                        NAGPUR CENTRAL
+    |_P_()
+    │   |_U_()
+    │       |_N_()
+    │           |_E_(isWord)
+    │                PUNE CANTONMENT
+    |_R_()
+    │   |_O_()
+    │       |_U_()
+    │           |_R_()
+    │               |_K_()
+    │                   |_E_()
+    │                       |_L_()
+    │                           |-A-(isWord)
+    │                                ROURKELA JUNCTION
+    |_S_()
+    │   |_H_()
+    │       |_I_()
+    │           |_V_()
+    │               |-A-()
+    │                   |_J_()
+    │                       |_I_(isWord)
+    │                            CHHATRAPATI SHIVAJI MAHARAJ TERMINUS MUMBAI
+    |_T_()
+        |_E_()
+        │   |_R_()
+        │       |_M_()
+        │           |_I_()
+        │               |_N_()
+        │                   |_U_()
+        │                       |_S_(isWord)
+        │                            LOKMANYA TILAK TERMINUS MUMBAI
+        │                            CHHATRAPATI SHIVAJI MAHARAJ TERMINUS MUMBAI
+        |_H_()
+        │   |-A-()
+        │       |_N_()
+        │           |_E_(isWord)
+        │                THANE JUNCTION
+        |_I_()
+            |_L_()
+                |-A-()
+                    |_K_(isWord)
+                         LOKMANYA TILAK TERMINUS MUMBAI
+****************************
+Please choose an admin job:
+  0. Exit admin user
+  1. Enter/delete station name
+  2. Enter/delete journey code
+  3. Read commands from file
+  4. Exit reading commands from file
+  5. Print trie of station names
+  6. Enter journey information
+
+Input: Thank you for being an admin!
+Bye!!!
+Enter user code (0 to exit): ****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journeys
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+
+Input: Enter prefix of any word in station name: Station: THANE JUNCTION
+[32mDay(s): [0mSun 
+[34mJourneyCode: 700[0m	[31mArr: [0m630[31m Dep: [0m700
+[32mDay(s): [0mSun 
+[34mJourneyCode: 231[0m	[31mArr: [0m1030[31m Dep: [0m1045
+[32mDay(s): [0mSun 
+[34mJourneyCode: 131[0m	[31mArr: [0m1800[31m Dep: [0m1815
+[32mDay(s): [0mMon 
+[34mJourneyCode: 700[0m	[31mArr: [0m630[31m Dep: [0m700
+[32mDay(s): [0mMon 
+[34mJourneyCode: 131[0m	[31mArr: [0m1800[31m Dep: [0m1815
+[32mDay(s): [0mTue 
+[34mJourneyCode: 700[0m	[31mArr: [0m630[31m Dep: [0m700
+[32mDay(s): [0mWed 
+[34mJourneyCode: 700[0m	[31mArr: [0m630[31m Dep: [0m700
+[32mDay(s): [0mThu 
+[34mJourneyCode: 131[0m	[31mArr: [0m1800[31m Dep: [0m1815
+[32mDay(s): [0mFri 
+[34mJourneyCode: 700[0m	[31mArr: [0m630[31m Dep: [0m700
+[32mDay(s): [0mFri 
+[34mJourneyCode: 231[0m	[31mArr: [0m1030[31m Dep: [0m1045
+[32mDay(s): [0mFri 
+[34mJourneyCode: 131[0m	[31mArr: [0m1800[31m Dep: [0m1815
+[32mDay(s): [0mSat 
+[34mJourneyCode: 700[0m	[31mArr: [0m630[31m Dep: [0m700
+[32mDay(s): [0mSat 
+[34mJourneyCode: 131[0m	[31mArr: [0m1800[31m Dep: [0m1815
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journeys
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+
+Input: Thank you for being a user!
+Bye!!!
+Enter user code (0 to exit): Thank you for using the journey planner.
+Bye!
