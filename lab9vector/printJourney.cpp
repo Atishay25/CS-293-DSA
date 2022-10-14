@@ -116,13 +116,14 @@ void Planner::printDirectJourneys(string srcStnName, string destStnName)
 
   listOfObjects<TrainInfoPerStation *> *directTrains = nullptr;       // list to store Direct Trains
   listOfObjects<int> *trainJourneyCode = nullptr;                     // list of JourneyCodes of trains departing from source
-  listOfObjects<int> *itrJourneyCode = nullptr;
-
-  // storing all journey codes of trains departing from source into trainJourneyCode
+  listOfObjects<int> *itrJourneyCode;
+   // storing all journey codes of trains departing from source into trainJourneyCode
   while(srcToStations != nullptr){                 
     listOfObjects<TrainInfoPerStation *> *Trains = srcToStations->object->trains;
     while(Trains != nullptr){
-      if(trainJourneyCode == nullptr){        // Inserting journey codes into the list trainJourneyCode
+      //trainJourneyCode.push_back(Trains->object->journeyCode);
+      //insertListOfObjects(trainJourneyCode,Trains->object->journeyCode);
+      if(trainJourneyCode == nullptr){
         trainJourneyCode = new listOfObjects<int>(Trains->object->journeyCode);
         itrJourneyCode = trainJourneyCode;
       }
@@ -139,30 +140,25 @@ void Planner::printDirectJourneys(string srcStnName, string destStnName)
     srcToStations = srcToStations->next;
   }
   
-  // Applying BFS for each journey Code that departs from the Source
-  while(itrJourneyCode != nullptr){
 
+  // Applying BFS for each journey Code that departs from the Source
+  listOfObjects<StationConnectionInfo *> *srcTrains = adjacency[stnNameToIndex.get(srcStnName)->value].toStations;
+  while(itrJourneyCode != nullptr){
     DynamicQueue<int> stnQueue;                             // Queue for BFS that stores current station's index
     stnQueue.push(stnNameToIndex.get(srcStnName)->value);   // push source station into queue
     while(!stnQueue.isEmpty()){           // loop through stations until stnQueue is empty
-
       int stn = stnQueue.delHead();       // get the head of stnQueue and delete it
       listOfObjects<StationConnectionInfo *> *stnAdj = adjacency[stn].toStations;     // adjacent toStations of stn 
       listOfObjects<StationConnectionInfo *> *stnAdj_temp = stnAdj;                   // copy of stnAdj for searching for journey Code
       while(stnAdj != nullptr){           // Loop through each station adjacent to the current station (stn)
-
-        // list of trains departing to stations from adjacent station (stnAdj)
-        listOfObjects<TrainInfoPerStation *> *toTrains = stnAdj->object->trains;
-        // stations from which trains arriving at adjacent station (stnAdj)
-        listOfObjects<StationConnectionInfo *> *stnAdjFrom = adjacency[stnAdj->object->adjacentStnIndex].fromStations;
-        // list of trains arriving at adjacent station (stnAdj)
-        listOfObjects<TrainInfoPerStation *> *fromTrains = stnAdjFrom->object->trains;
-        // bools to check if current journey code is present in train lists
-        bool foundinTo = false, foundinFrom = false;        
+        listOfObjects<TrainInfoPerStation *> *toTrains = stnAdj->object->trains;      // list of trains departing to stations from adjacent station (stnAdj)
+        listOfObjects<StationConnectionInfo *> *stnAdjFrom = adjacency[stnAdj->object->adjacentStnIndex].fromStations;  // stations from which trains arriving at adjacent station (stnAdj)
+        listOfObjects<TrainInfoPerStation *> *fromTrains = stnAdjFrom->object->trains;  // list of trains arriving at adjacent station (stnAdj)
+        bool foundinTo = false, foundinFrom = false;        // bools to check if current journey code is present in train lists
         TrainInfoPerStation *newDirectTrain = nullptr;      // new Direct Train
-        TrainInfoPerStation *sameTrain = nullptr;           // same Train which arrives at stnAdj
+        TrainInfoPerStation *sameTrain = nullptr;           // same Train which arrives at adjacent station (stnAdj)
 
-        while(stnAdjFrom != nullptr){       // Check if train with current JourneyCode is arriving at adjacent station (stnAdj)
+        while(stnAdjFrom != nullptr){             // Check if train with current JourneyCode is arriving at adjacent station (stnAdj)
           fromTrains = stnAdjFrom->object->trains;
           sameTrain = find(itrJourneyCode->object,fromTrains);
           if(sameTrain != nullptr){
@@ -172,7 +168,7 @@ void Planner::printDirectJourneys(string srcStnName, string destStnName)
           stnAdjFrom = stnAdjFrom->next;
         }
 
-        while(stnAdj_temp != nullptr){      // Check if train with current JourneyCode is departing from adjacent station (stnAdj)
+        while(stnAdj_temp != nullptr){                    // Check if train with current JourneyCode is departing from adjacent station (stnAdj)
           toTrains = stnAdj_temp->object->trains;
           newDirectTrain = find(itrJourneyCode->object,toTrains);
           if(newDirectTrain != nullptr){
@@ -188,16 +184,18 @@ void Planner::printDirectJourneys(string srcStnName, string destStnName)
         }
 
         if(stnAdj->object->adjacentStnIndex == stnNameToIndex.get(destStnName)->value){   // If stnAdj is the destination
-          if(directTrains == nullptr){                                                    // insert new direct train into directTrains list
+          //directTrains.push_back(newDirectTrain);       // insert new direct train into directTrains list
+          //insertListOfObjects(directTrains,newDirectTrain);
+          if(directTrains == nullptr){
             directTrains = new listOfObjects<TrainInfoPerStation *>(newDirectTrain);
           }
           else{
-            listOfObjects<TrainInfoPerStation *> *newTrain = new listOfObjects<TrainInfoPerStation *>(newDirectTrain);
-            listOfObjects<TrainInfoPerStation *> *temp = directTrains;
-            while(temp->next != nullptr){
-              temp = temp->next;
-            }
-            temp->next = newTrain;
+          listOfObjects<TrainInfoPerStation *> *newTrain = new listOfObjects<TrainInfoPerStation *>(newDirectTrain);
+          listOfObjects<TrainInfoPerStation *> *temp = directTrains;
+          while(temp->next != nullptr){
+            temp = temp->next;
+          }
+          temp->next = newTrain;
           }
           break;                                        // break out of loop
         }
@@ -210,6 +208,22 @@ void Planner::printDirectJourneys(string srcStnName, string destStnName)
     itrJourneyCode = itrJourneyCode->next;
   }
 
+  listOfObjects<TrainInfoPerStation *> *DirectTrains = nullptr;     // Final list Direct Trains as listOfObjects<TrainInfoPerStation *>
+
+  // Storing all directTrains into Direct Trains final list 
+  //for(int i=0; i<directTrains.size(); i++){
+  //  if(DirectTrains == nullptr){
+  //    DirectTrains = new listOfObjects<TrainInfoPerStation *>(directTrains[i]);
+  //  }
+  //  else{
+  //    listOfObjects<TrainInfoPerStation *> *newDirectTrain = new listOfObjects<TrainInfoPerStation *>(directTrains[i]);
+  //    listOfObjects<TrainInfoPerStation *> *temp = DirectTrains;
+  //    while(temp->next != nullptr){
+  //      temp = temp->next;
+  //    }
+  //    temp->next = newDirectTrain;
+  //  }
+  //}
   if(directTrains != nullptr){      // Print all direct trains if there are direct trains
     printStationInfo(directTrains);
   }

@@ -1,0 +1,709 @@
+[34m*********************************************************[0m
+[31mWelcome to the CS293 Travel Planner (Autumn 2022 version)[0m
+[34m*********************************************************[0m
+
+Enter user code (0 to exit): ****************************
+Please choose an admin job:
+  0. Exit admin user
+  1. Enter/delete station name
+  2. Enter/delete journey code
+  3. Read commands from file
+  4. Exit reading commands from file
+  5. Print trie of station names
+  6. Enter journey information
+
+Input:   Input file name: Finished reading and executing commands from file
+****************************
+Please choose an admin job:
+  0. Exit admin user
+  1. Enter/delete station name
+  2. Enter/delete journey code
+  3. Read commands from file
+  4. Exit reading commands from file
+  5. Print trie of station names
+  6. Enter journey information
+
+Input:  ***()
+    |-A-()
+    │   |_H_()
+    │       |_M_()
+    │           |_E_()
+    │               |_D_()
+    │                   |-A-()
+    │                       |_B_()
+    │                           |-A-()
+    │                               |_D_(isWord)
+    │                                    AHMEDABAD CENTRAL
+    |_B_()
+    │   |_H_()
+    │       |_I_()
+    │           |_L_()
+    │               |-A-()
+    │                   |_I_(isWord)
+    │                        BHILAI JUNCTION
+    |_C_()
+    │   |-A-()
+    │   │   |_N_()
+    │   │       |_T_()
+    │   │           |_O_()
+    │   │               |_N_()
+    │   │                   |_M_()
+    │   │                       |_E_()
+    │   │                           |_N_()
+    │   │                               |_T_(isWord)
+    │   │                                    PUNE CANTONMENT
+    │   |_E_()
+    │   │   |_N_()
+    │   │       |_T_()
+    │   │           |_R_()
+    │   │               |-A-()
+    │   │                   |_L_(isWord)
+    │   │                        NAGPUR CENTRAL
+    │   │                        MUMBAI CENTRAL
+    │   │                        AHMEDABAD CENTRAL
+    │   |_H_()
+    │       |_H_()
+    │           |-A-()
+    │               |_T_()
+    │                   |_R_()
+    │                       |-A-()
+    │                           |_P_()
+    │                               |-A-()
+    │                                   |_T_()
+    │                                       |_I_(isWord)
+    │                                            CHHATRAPATI SHIVAJI MAHARAJ TERMINUS MUMBAI
+    |_H_()
+    │   |_O_()
+    │       |_W_()
+    │           |_R_()
+    │               |-A-()
+    │                   |_H_(isWord)
+    │                        HOWRAH JUNCTION
+    |_J_()
+    │   |_U_()
+    │       |_N_()
+    │           |_C_()
+    │               |_T_()
+    │                   |_I_()
+    │                       |_O_()
+    │                           |_N_(isWord)
+    │                                ROURKELA JUNCTION
+    │                                HOWRAH JUNCTION
+    │                                KALYAN JUNCTION
+    │                                THANE JUNCTION
+    │                                BHILAI JUNCTION
+    |_K_()
+    │   |-A-()
+    │       |_L_()
+    │           |_Y_()
+    │               |-A-()
+    │                   |_N_(isWord)
+    │                        KALYAN JUNCTION
+    |_L_()
+    │   |_O_()
+    │       |_K_()
+    │           |_M_()
+    │               |-A-()
+    │                   |_N_()
+    │                       |_Y_()
+    │                           |-A-(isWord)
+    │                                LOKMANYA TILAK TERMINUS MUMBAI
+    |_M_()
+    │   |-A-()
+    │   │   |_H_()
+    │   │       |-A-()
+    │   │           |_R_()
+    │   │               |-A-()
+    │   │                   |_J_(isWord)
+    │   │                        CHHATRAPATI SHIVAJI MAHARAJ TERMINUS MUMBAI
+    │   |_U_()
+    │       |_M_()
+    │           |_B_()
+    │               |-A-()
+    │                   |_I_(isWord)
+    │                        LOKMANYA TILAK TERMINUS MUMBAI
+    │                        CHHATRAPATI SHIVAJI MAHARAJ TERMINUS MUMBAI
+    │                        MUMBAI CENTRAL
+    |_N_()
+    │   |-A-()
+    │       |_G_()
+    │           |_P_()
+    │               |_U_()
+    │                   |_R_(isWord)
+    │                        NAGPUR CENTRAL
+    |_P_()
+    │   |_U_()
+    │       |_N_()
+    │           |_E_(isWord)
+    │                PUNE CANTONMENT
+    |_R_()
+    │   |_O_()
+    │       |_U_()
+    │           |_R_()
+    │               |_K_()
+    │                   |_E_()
+    │                       |_L_()
+    │                           |-A-(isWord)
+    │                                ROURKELA JUNCTION
+    |_S_()
+    │   |_H_()
+    │       |_I_()
+    │           |_V_()
+    │               |-A-()
+    │                   |_J_()
+    │                       |_I_(isWord)
+    │                            CHHATRAPATI SHIVAJI MAHARAJ TERMINUS MUMBAI
+    |_T_()
+        |_E_()
+        │   |_R_()
+        │       |_M_()
+        │           |_I_()
+        │               |_N_()
+        │                   |_U_()
+        │                       |_S_(isWord)
+        │                            LOKMANYA TILAK TERMINUS MUMBAI
+        │                            CHHATRAPATI SHIVAJI MAHARAJ TERMINUS MUMBAI
+        |_H_()
+        │   |-A-()
+        │       |_N_()
+        │           |_E_(isWord)
+        │                THANE JUNCTION
+        |_I_()
+            |_L_()
+                |-A-()
+                    |_K_(isWord)
+                         LOKMANYA TILAK TERMINUS MUMBAI
+****************************
+Please choose an admin job:
+  0. Exit admin user
+  1. Enter/delete station name
+  2. Enter/delete journey code
+  3. Read commands from file
+  4. Exit reading commands from file
+  5. Print trie of station names
+  6. Enter journey information
+
+Input: Thank you for being an admin!
+Bye!!!
+Enter user code (0 to exit): ****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: THANE JUNCTION
+Enter prefix of any word in destination station name: Enter choice number: 
+0: MUMBAI CENTRAL
+1: CHHATRAPATI SHIVAJI MAHARAJ TERMINUS MUMBAI
+2: LOKMANYA TILAK TERMINUS MUMBAI
+
+Chosen destination station: MUMBAI CENTRAL
+[32mDay(s): [0mSat 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+[32mDay(s): [0mFri 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+[32mDay(s): [0mThu 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+[32mDay(s): [0mMon 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+[32mDay(s): [0mSun 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: NAGPUR CENTRAL
+Enter prefix of any word in destination station name: Chosen destination station: HOWRAH JUNCTION
+[32mDay(s): [0mSat 
+[34mJourneyCode: 231[0m	[31mArr: [0m1800[31m Dep: [0m1830
+[32mDay(s): [0mMon 
+[34mJourneyCode: 231[0m	[31mArr: [0m1800[31m Dep: [0m1830
+[32mDay(s): [0mSat 
+[34mJourneyCode: 331[0m	[31mArr: [0m600[31m Dep: [0mEnds
+[32mDay(s): [0mThu 
+[34mJourneyCode: 331[0m	[31mArr: [0m600[31m Dep: [0mEnds
+[32mDay(s): [0mTue 
+[34mJourneyCode: 331[0m	[31mArr: [0m600[31m Dep: [0mEnds
+[32mDay(s): [0mMon 
+[34mJourneyCode: 331[0m	[31mArr: [0m600[31m Dep: [0mEnds
+[32mDay(s): [0mSun 
+[34mJourneyCode: 331[0m	[31mArr: [0m600[31m Dep: [0mEnds
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: NAGPUR CENTRAL
+Enter prefix of any word in destination station name: Chosen destination station: BHILAI JUNCTION
+[32mDay(s): [0mThu 
+[34mJourneyCode: 431[0m	[31mArr: [0m100[31m Dep: [0mEnds
+[32mDay(s): [0mWed 
+[34mJourneyCode: 431[0m	[31mArr: [0m100[31m Dep: [0mEnds
+[32mDay(s): [0mTue 
+[34mJourneyCode: 431[0m	[31mArr: [0m100[31m Dep: [0mEnds
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: THANE JUNCTION
+Enter prefix of any word in destination station name: Chosen destination station: HOWRAH JUNCTION
+[32mDay(s): [0mSat 
+[34mJourneyCode: 231[0m	[31mArr: [0m1800[31m Dep: [0m1830
+[32mDay(s): [0mMon 
+[34mJourneyCode: 231[0m	[31mArr: [0m1800[31m Dep: [0m1830
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: LOKMANYA TILAK TERMINUS MUMBAI
+Enter prefix of any word in destination station name: Chosen destination station: NAGPUR CENTRAL
+[32mDay(s): [0mSat 
+[34mJourneyCode: 331[0m	[31mArr: [0m830[31m Dep: [0m900
+[32mDay(s): [0mFri 
+[34mJourneyCode: 331[0m	[31mArr: [0m830[31m Dep: [0m900
+[32mDay(s): [0mWed 
+[34mJourneyCode: 331[0m	[31mArr: [0m830[31m Dep: [0m900
+[32mDay(s): [0mMon 
+[34mJourneyCode: 331[0m	[31mArr: [0m830[31m Dep: [0m900
+[32mDay(s): [0mSun 
+[34mJourneyCode: 331[0m	[31mArr: [0m830[31m Dep: [0m900
+[32mDay(s): [0mWed 
+[34mJourneyCode: 431[0m	[31mArr: [0m930[31m Dep: [0m1000
+[32mDay(s): [0mTue 
+[34mJourneyCode: 431[0m	[31mArr: [0m930[31m Dep: [0m1000
+[32mDay(s): [0mMon 
+[34mJourneyCode: 431[0m	[31mArr: [0m930[31m Dep: [0m1000
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: PUNE CANTONMENT
+Enter prefix of any word in destination station name: Chosen destination station: THANE JUNCTION
+[32mDay(s): [0mSat 
+[34mJourneyCode: 131[0m	[31mArr: [0m1800[31m Dep: [0m1815
+[32mDay(s): [0mFri 
+[34mJourneyCode: 131[0m	[31mArr: [0m1800[31m Dep: [0m1815
+[32mDay(s): [0mThu 
+[34mJourneyCode: 131[0m	[31mArr: [0m1800[31m Dep: [0m1815
+[32mDay(s): [0mMon 
+[34mJourneyCode: 131[0m	[31mArr: [0m1800[31m Dep: [0m1815
+[32mDay(s): [0mSun 
+[34mJourneyCode: 131[0m	[31mArr: [0m1800[31m Dep: [0m1815
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: PUNE CANTONMENT
+Enter prefix of any word in destination station name: Enter choice number: 
+0: MUMBAI CENTRAL
+1: CHHATRAPATI SHIVAJI MAHARAJ TERMINUS MUMBAI
+2: LOKMANYA TILAK TERMINUS MUMBAI
+
+Chosen destination station: MUMBAI CENTRAL
+[32mDay(s): [0mSat 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+[32mDay(s): [0mFri 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+[32mDay(s): [0mThu 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+[32mDay(s): [0mMon 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+[32mDay(s): [0mSun 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: PUNE CANTONMENT
+Enter prefix of any word in destination station name: Chosen destination station: HOWRAH JUNCTION
+No direct journeys available
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: KALYAN JUNCTION
+Enter prefix of any word in destination station name: Chosen destination station: LOKMANYA TILAK TERMINUS MUMBAI
+No direct journeys available
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Enter choice number: 
+0: MUMBAI CENTRAL
+1: CHHATRAPATI SHIVAJI MAHARAJ TERMINUS MUMBAI
+2: LOKMANYA TILAK TERMINUS MUMBAI
+
+Chosen source station: CHHATRAPATI SHIVAJI MAHARAJ TERMINUS MUMBAI
+Enter prefix of any word in destination station name: Chosen destination station: AHMEDABAD CENTRAL
+No direct journeys available
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: BHILAI JUNCTION
+Enter prefix of any word in destination station name: Chosen destination station: NAGPUR CENTRAL
+No direct journeys available
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: BHILAI JUNCTION
+Enter prefix of any word in destination station name: Chosen destination station: LOKMANYA TILAK TERMINUS MUMBAI
+No direct journeys available
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: ROURKELA JUNCTION
+Enter prefix of any word in destination station name: Chosen destination station: HOWRAH JUNCTION
+[32mDay(s): [0mTue 
+[34mJourneyCode: 231[0m	[31mArr: [0m800[31m Dep: [0mEnds
+[32mDay(s): [0mSun 
+[34mJourneyCode: 231[0m	[31mArr: [0m800[31m Dep: [0mEnds
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: HOWRAH JUNCTION
+Enter prefix of any word in destination station name: Chosen destination station: KALYAN JUNCTION
+No direct journeys available
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: LOKMANYA TILAK TERMINUS MUMBAI
+Enter prefix of any word in destination station name: Chosen destination station: BHILAI JUNCTION
+[32mDay(s): [0mThu 
+[34mJourneyCode: 431[0m	[31mArr: [0m100[31m Dep: [0mEnds
+[32mDay(s): [0mWed 
+[34mJourneyCode: 431[0m	[31mArr: [0m100[31m Dep: [0mEnds
+[32mDay(s): [0mTue 
+[34mJourneyCode: 431[0m	[31mArr: [0m100[31m Dep: [0mEnds
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: KALYAN JUNCTION
+Enter prefix of any word in destination station name: Chosen destination station: NAGPUR CENTRAL
+[32mDay(s): [0mSat 
+[34mJourneyCode: 231[0m	[31mArr: [0m600[31m Dep: [0m630
+[32mDay(s): [0mMon 
+[34mJourneyCode: 231[0m	[31mArr: [0m600[31m Dep: [0m630
+[32mDay(s): [0mSat 
+[34mJourneyCode: 331[0m	[31mArr: [0m830[31m Dep: [0m900
+[32mDay(s): [0mFri 
+[34mJourneyCode: 331[0m	[31mArr: [0m830[31m Dep: [0m900
+[32mDay(s): [0mWed 
+[34mJourneyCode: 331[0m	[31mArr: [0m830[31m Dep: [0m900
+[32mDay(s): [0mMon 
+[34mJourneyCode: 331[0m	[31mArr: [0m830[31m Dep: [0m900
+[32mDay(s): [0mSun 
+[34mJourneyCode: 331[0m	[31mArr: [0m830[31m Dep: [0m900
+[32mDay(s): [0mWed 
+[34mJourneyCode: 431[0m	[31mArr: [0m930[31m Dep: [0m1000
+[32mDay(s): [0mTue 
+[34mJourneyCode: 431[0m	[31mArr: [0m930[31m Dep: [0m1000
+[32mDay(s): [0mMon 
+[34mJourneyCode: 431[0m	[31mArr: [0m930[31m Dep: [0m1000
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: KALYAN JUNCTION
+Enter prefix of any word in destination station name: Chosen destination station: HOWRAH JUNCTION
+[32mDay(s): [0mSat 
+[34mJourneyCode: 231[0m	[31mArr: [0m1800[31m Dep: [0m1830
+[32mDay(s): [0mMon 
+[34mJourneyCode: 231[0m	[31mArr: [0m1800[31m Dep: [0m1830
+[32mDay(s): [0mSat 
+[34mJourneyCode: 331[0m	[31mArr: [0m600[31m Dep: [0mEnds
+[32mDay(s): [0mThu 
+[34mJourneyCode: 331[0m	[31mArr: [0m600[31m Dep: [0mEnds
+[32mDay(s): [0mTue 
+[34mJourneyCode: 331[0m	[31mArr: [0m600[31m Dep: [0mEnds
+[32mDay(s): [0mMon 
+[34mJourneyCode: 331[0m	[31mArr: [0m600[31m Dep: [0mEnds
+[32mDay(s): [0mSun 
+[34mJourneyCode: 331[0m	[31mArr: [0m600[31m Dep: [0mEnds
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: NAGPUR CENTRAL
+Enter prefix of any word in destination station name: Chosen destination station: HOWRAH JUNCTION
+[32mDay(s): [0mSat 
+[34mJourneyCode: 231[0m	[31mArr: [0m1800[31m Dep: [0m1830
+[32mDay(s): [0mMon 
+[34mJourneyCode: 231[0m	[31mArr: [0m1800[31m Dep: [0m1830
+[32mDay(s): [0mSat 
+[34mJourneyCode: 331[0m	[31mArr: [0m600[31m Dep: [0mEnds
+[32mDay(s): [0mThu 
+[34mJourneyCode: 331[0m	[31mArr: [0m600[31m Dep: [0mEnds
+[32mDay(s): [0mTue 
+[34mJourneyCode: 331[0m	[31mArr: [0m600[31m Dep: [0mEnds
+[32mDay(s): [0mMon 
+[34mJourneyCode: 331[0m	[31mArr: [0m600[31m Dep: [0mEnds
+[32mDay(s): [0mSun 
+[34mJourneyCode: 331[0m	[31mArr: [0m600[31m Dep: [0mEnds
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: THANE JUNCTION
+Enter prefix of any word in destination station name: Chosen destination station: AHMEDABAD CENTRAL
+No direct journeys available
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: PUNE CANTONMENT
+Enter prefix of any word in destination station name: Enter choice number: 
+0: MUMBAI CENTRAL
+1: CHHATRAPATI SHIVAJI MAHARAJ TERMINUS MUMBAI
+2: LOKMANYA TILAK TERMINUS MUMBAI
+
+Chosen destination station: MUMBAI CENTRAL
+[32mDay(s): [0mSat 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+[32mDay(s): [0mFri 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+[32mDay(s): [0mThu 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+[32mDay(s): [0mMon 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+[32mDay(s): [0mSun 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: THANE JUNCTION
+Enter prefix of any word in destination station name: Enter choice number: 
+0: MUMBAI CENTRAL
+1: CHHATRAPATI SHIVAJI MAHARAJ TERMINUS MUMBAI
+2: LOKMANYA TILAK TERMINUS MUMBAI
+
+Chosen destination station: MUMBAI CENTRAL
+[32mDay(s): [0mSat 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+[32mDay(s): [0mFri 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+[32mDay(s): [0mThu 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+[32mDay(s): [0mMon 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+[32mDay(s): [0mSun 
+[34mJourneyCode: 131[0m	[31mArr: [0m2130[31m Dep: [0mEnds
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: AHMEDABAD CENTRAL
+Enter prefix of any word in destination station name: Chosen destination station: LOKMANYA TILAK TERMINUS MUMBAI
+[32mDay(s): [0mTue 
+[34mJourneyCode: 431[0m	[31mArr: [0m1845[31m Dep: [0m1900
+[32mDay(s): [0mMon 
+[34mJourneyCode: 431[0m	[31mArr: [0m1845[31m Dep: [0m1900
+[32mDay(s): [0mSun 
+[34mJourneyCode: 431[0m	[31mArr: [0m1845[31m Dep: [0m1900
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: HOWRAH JUNCTION
+Enter prefix of any word in destination station name: Chosen destination station: NAGPUR CENTRAL
+No direct journeys available
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: LOKMANYA TILAK TERMINUS MUMBAI
+Enter prefix of any word in destination station name: Chosen destination station: THANE JUNCTION
+No direct journeys available
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Enter prefix of any word in source station name: Chosen source station: KALYAN JUNCTION
+Enter prefix of any word in destination station name: Chosen destination station: ROURKELA JUNCTION
+[32mDay(s): [0mSat 
+[34mJourneyCode: 231[0m	[31mArr: [0m1800[31m Dep: [0m1830
+[32mDay(s): [0mMon 
+[34mJourneyCode: 231[0m	[31mArr: [0m1800[31m Dep: [0m1830
+
+****************************
+Please choose a user job:
+  100. Exit user
+  110. Enter/delete review
+  120. Find journey reviews
+  130. Read commands from a file
+  140. Exit reading commands from a file
+  150. Find all journeys from station
+  160. Find direct journeys
+
+Input: Thank you for being a user!
+Bye!!!
+Enter user code (0 to exit): Thank you for using the journey planner.
+Bye!
