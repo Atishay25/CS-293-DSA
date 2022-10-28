@@ -110,7 +110,7 @@ LOKMANYA TILAK TERMINUS MUMBAI  $ Full station name of stop 2
 KALYAN JUNCTION   $ Full station name of stop 3
 1                $ Day count, i.e. stopping at KALYAN JUNCTION on day 1 of journey
 2300		 $ Arrival time at KALYAN JUNCTION
-2220		 $ Departure time from KALYAN JUNCTION
+2320		 $ Departure time from KALYAN JUNCTION
 NAGPUR CENTRAL 	 $ Full station name of stop 4
 2      		 $ Day count, i.e. stopping at NAGPUR CENTRAL on day 2 of journey
 930		 $ Arrival time at NAGPUR CENTRAL
