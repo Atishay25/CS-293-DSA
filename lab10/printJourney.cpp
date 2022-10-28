@@ -119,7 +119,7 @@ void Planner::printPlanJourneys(string srcStnName, string destStnName, int maxSt
   // planner.cpp
   listOfObjects<StationConnectionInfo *> *adjStn = adjacency[stnNameToIndex.get(srcStnName)->value].toStations;
   dfs(adjStn);
-  
+
   return;
 }
 
