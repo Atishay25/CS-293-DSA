@@ -383,7 +383,6 @@ void Planner::printPlanJourneys(string srcStnName, string destStnName, int maxSt
     int num_trains = 0;
     while (Trains != nullptr)
     {
-      cout << stnNameToIndex.getKeyAtIndex(itr_srcToStations->object->adjacentStnIndex) << endl;
       TrainStnInfo *newTrain = new TrainStnInfo(Trains->object->journeyCode, Trains->object->stopSeq, Trains->object->arrTime, Trains->object->depTime, srcStnName, stnNameToIndex.getKeyAtIndex(itr_srcToStations->object->adjacentStnIndex), stnNameToIndex.get(srcStnName)->value, itr_srcToStations->object->adjacentStnIndex);
       for (int i = 0; i < 7; i++)
       {
@@ -413,6 +412,7 @@ void Planner::printPlanJourneys(string srcStnName, string destStnName, int maxSt
       }
       Trains = Trains->next;
     }
+
     TrainStnInfo **trains = new TrainStnInfo *[num_trains];
     int *jrnyCodes = new int[num_trains];
     int num = 0;
@@ -429,7 +429,6 @@ void Planner::printPlanJourneys(string srcStnName, string destStnName, int maxSt
     int i = 0;
     while (itrJrny != nullptr)
     {
-          cout << "ENDsjdbfjvhs\n";
       if (indirectTrains == nullptr)
       {
         listOfObjects<TrainStnInfo *> *newTrainInfo = new listOfObjects<TrainStnInfo *>(itrJrny->object);
@@ -468,9 +467,9 @@ void Planner::printPlanJourneys(string srcStnName, string destStnName, int maxSt
       itrJrny = itrJrny->next;
       i++;
     }
+
     itr_srcToStations = itr_srcToStations->next;
   }
-    cout << "END\n";
   recursionLevel--;
   return;
 }

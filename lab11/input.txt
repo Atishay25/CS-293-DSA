@@ -1,0 +1,13 @@
+1879
+3
+adminInputs10.txt
+0
+123
+170
+kal
+3
+bhil
+how
+rour
+100
+0
